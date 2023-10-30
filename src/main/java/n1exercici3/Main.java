@@ -20,7 +20,7 @@ public class Main {
 
         try {
             archive = new File(
-                    "C:\\Especializacion\\S1_T3\\src\\n1exercici3\\countries.txt");
+                    "src/main/java/n1exercici3/countries.txt");
             fr = new FileReader(archive);
             br = new BufferedReader(fr);
 
@@ -68,7 +68,7 @@ public class Main {
 
         try {
             File myObj = new File(
-                    "C:\\Especializacion\\S1_T3\\src\\n1exercici3\\clasificacio.txt");
+                    "src/main/java/n1exercici3/clasificacio.txt");
             if (myObj.createNewFile()) {
                 System.out.println("Archivo clasificaccio.txt creado: " + myObj.getName());
             } else {
@@ -83,7 +83,7 @@ public class Main {
         PrintWriter pw = null;
         try {
             fichero = new FileWriter(
-                    "C:\\Especializacion\\S1_T3\\src\\n1exercici3\\clasificacio.txt");
+                    "src/main/java/n1exercici3/clasificacio.txt");
             pw = new PrintWriter(fichero);
 
             pw.println("nombre: " + name);
