@@ -30,11 +30,19 @@ public class Main {
         System.out.println(list2);
 
 
-        for (ListIterator<Integer> it = list1.listIterator(); it.hasNext(); ) {
-            int t = it.next();
-            list2.add(t);
+        System.out.println(list1);
+
+        List<Integer> entersInver = new ArrayList<Integer>();
+
+        ListIterator<Integer> listIterator = list1.listIterator(list1.size());
+
+        while (listIterator.hasPrevious()) {
+
+            entersInver.add(listIterator.previous());
+
         }
-        System.out.println(list2);
+
+        System.out.println(entersInver);
     }
 
 }

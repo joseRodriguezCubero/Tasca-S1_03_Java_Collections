@@ -113,6 +113,7 @@ public class Main {
             System.out.println("La persona introducida ya se encuentra en la aplicación");
         } else {
             entryAlfOrd.add(addedPerson);
+            System.out.println("Persona introducida correctamente");
         }
     }
 
