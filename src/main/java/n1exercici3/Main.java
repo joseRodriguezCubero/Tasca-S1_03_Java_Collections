@@ -60,6 +60,7 @@ public class Main {
             Object randomValue = values[random.nextInt(values.length)];
             answer = Entrada.leerString("Introduzca la capital de " + randomValue);
             if (countries.getOrDefault(answer,answer).equalsIgnoreCase(randomValue.toString())) {
+                System.out.println("Respuesta Correcta!");
                 score++;
             }
 
